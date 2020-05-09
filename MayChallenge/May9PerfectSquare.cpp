@@ -1,9 +1,11 @@
 class Solution {
 public:
     bool isPerfectSquare(int num) {
-        int n= sqrt(num);
-        if((n*n)==num)
+        for(long i=1;i<=num;i++)
+        {
+            if((i*i)==num)
             return true;
+        }
         return false;
     }
 };
